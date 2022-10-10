@@ -12,7 +12,7 @@ app.get("/", async (req, res, next) => {
 
     res.send(" api is working  properly ")
 })
-mongoose.connect(process.env.DATABASE_LOCAL).then(() => {
+mongoose.connect("mongodb://localhost:27017/tour-management").then(() => {
 
     console.log("database connect succesfully")
 })
