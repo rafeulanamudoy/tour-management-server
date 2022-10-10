@@ -22,8 +22,8 @@ app.listen(port, () => {
 
 
 })
-app.use("/api/v1/tours", tourRoute);
-app.use("/api/v1/tour", tourRoute2);
+app.use("/tours", tourRoute);
+app.use("/tour", tourRoute2);
 
 
 
